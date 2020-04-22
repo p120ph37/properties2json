@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20190722'
+}
+
+application {
+    mainClassName = 'properties2json.App'
+}
+
+shadowJar {
+   classifier = ''
+   archiveVersion = ''
+}
